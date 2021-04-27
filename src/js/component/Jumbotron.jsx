@@ -1,7 +1,7 @@
 import React from "react";
 export function Jumbotron() {
 	return (
-		<div className="jumbotron container center">
+		<div className="jumbotron center">
 			<h1 className="display-4">A Warm Welcome!</h1>
 			<p>
 				Wisi forensibus mnesarchum in cum. Per id impetus abhorreant,
