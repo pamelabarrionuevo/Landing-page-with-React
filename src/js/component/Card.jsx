@@ -1,10 +1,10 @@
 import React from "react";
 
 //create your first component
-export function Card() {
+export function Card(imagen) {
 	return (
 		<div className="card">
-			<img src="..." className="card-img-top" alt="..." />
+			<img src={imagen} className="card-img-top" alt="..." />
 			<div className="card-body">
 				<h5 className="card-title">Card title</h5>
 				<p className="card-text">
@@ -22,10 +22,18 @@ export function Card() {
 export function Cardx4() {
 	return (
 		<div className="row mb-4">
-			<div className="col-sm-3"> {Card()} </div>
-			<div className="col-sm-3"> {Card()} </div>
-			<div className="col-sm-3"> {Card()} </div>
-			<div className="col-sm-3"> {Card()} </div>
+			<div className="col-sm-3">
+				{Card("https://picsum.photos/200?random=1")}
+			</div>
+			<div className="col-sm-3">
+				{Card("https://picsum.photos/200?random=2")}
+			</div>
+			<div className="col-sm-3">
+				{Card("https://picsum.photos/200?random=3")}
+			</div>
+			<div className="col-sm-3">
+				{Card("https://picsum.photos/200?random=4")}
+			</div>
 		</div>
 	);
 }
